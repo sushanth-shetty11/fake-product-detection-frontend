@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fake Product Identification Using Blockchain</title>
+<style>
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #121212, #1d1d1d);
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #1e90ff;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #f5a623;
+}
+
+/* Header Section */
+#templatemo_header_wrapper {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+}
+
+#templatemo_header #title {
+    color: #f5a623;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeInDown 1s;
+}
+
+/* Navigation Menu */
+#templatemo_menu_wrapper {
+    background: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#templatemo_menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+#templatemo_menu ul li {
+    margin: 0 15px;
+}
+
+#templatemo_menu ul li a {
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#templatemo_menu ul li a:hover {
+    background: #f5a623;
+    color: #121212;
+}
+
+/* Content Section */
+#templatemo_content_wrapper {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+#particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+}
+
+.section_w620 {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 50px;
+    color: #f5f5f5;
+    background: linear-gradient(to right, #121212, #333);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    animation: scaleUp 1s ease-out;
+}
+
+.section_w620 h3 {
+    font-size: 2.5rem;
+    color: #f5a623;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s;
+}
+
+.section_w620 p {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif; /* Changed font */
+    animation: fadeInUp 2s;
+    animation-delay: 0.5s;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section_w620 .cta-button {
+    background-color: #f5a623;
+    padding: 15px 30px;
+    color: #121212;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 2s;
+    animation-delay: 1s;
+    margin-top: 30px; /* Moved down */
+}
+
+.section_w620 .cta-button:hover {
+    background-color: #ff7f50;
+}
+
+/* Footer Section */
+#footer_wrapper {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: #777;
+    border-top: 2px solid #444;
+    margin-top: 50px; /* Moved footer down */
+}
+
+#footer_wrapper p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #templatemo_menu ul {
+        flex-direction: column;
+    }
+
+    #templatemo_menu ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+    <div id="templatemo_header">
+        <div id="title">Fake Product Identification Using Blockchain</div>
+    </div>
+</div>
+
+<div id="templatemo_menu_wrapper">
+    <div id="templatemo_menu">
+        <ul>
+            <li><a href="index">Home</a></li>
+            <li><a href="AdminLogin">Admin Login</a></li>
+            <li><a href="Login">Consumer Login</a></li>
+            <li><a href="SLogin">Supplier Login</a></li>
+            <li><a href="RLogin">Retailer Login</a></li>
+            <li><a href="Signup">New User Signup</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="templatemo_content_wrapper">
+    <canvas id="particles-canvas"></canvas>
+    <div class="section_w620">
+        <h3>Welcome to the Future of Product Authentication</h3>
+        <p>Blockchain technology ensures that you purchase only authentic products, preventing counterfeit goods from entering the market. Join the movement toward transparency and trust in every transaction.</p>
+        <button class="cta-button" onclick="window.location.href='Signup'">Get Started</button>
+    </div>
+</div>
+<br>
+<br><br>
+
+<div id="footer_wrapper">
+    <p>&copy; 2024 Fake Product Identification Using Blockchain. All Rights Reserved.</p>
+</div>
+
+<script>
+    // Particle Animation Script
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+
+    canvas.width = window.innerWidth;
+    canvas.height = 400;
+
+    class Particle {
+        constructor(x, y, size, speedX, speedY) {
+            this.x = x;
+            this.y = y;
+            this.size = size;
+            this.speedX = speedX;
+            this.speedY = speedY;
+        }
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = '#f5a623';
+            ctx.fill();
+        }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+            if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
+        }
+    }
+
+    function initParticles() {
+        particlesArray = [];
+        for (let i = 0; i < 100; i++) {
+            const size = Math.random() * 5 + 1;
+            const x = Math.random() * canvas.width;
+            const y = Math.random() * canvas.height;
+            const speedX = (Math.random() * 0.5) - 0.25;
+            const speedY = (Math.random() * 0.5) - 0.25;
+            particlesArray.push(new Particle(x, y, size, speedX, speedY));
+        }
+    }
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particlesArray.forEach(particle => {
+            particle.update();
+            particle.draw();
+        });
+        requestAnimationFrame(animateParticles);
+    }
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = 400;
+        initParticles();
+    });
+
+    initParticles();
+    animateParticles();
+</script>
+</body>
+</html>
